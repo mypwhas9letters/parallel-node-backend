@@ -10,8 +10,9 @@ app.use(express.static(__dirname + '/public'));
 
 //Express middleware
 //Must use next to continue running app
+//app.use registers a middleware
 app.use((req, res, next) => {
-  //req will contain all information from the user
+  //req will contain all information from the users request
   next();
 })
 
